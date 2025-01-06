@@ -139,3 +139,10 @@ internal class ViewModel : INotifyPropertyChanged
 
 ![DynamicTargetLine1](https://github.com/user-attachments/assets/aa0e643e-f62e-4d95-a596-7cd981484d47)
 
+**Troubleshooting**
+
+Path too long exception
+
+If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
+
+For more details, refer to the KB on [how to create and dynamically update target line for WPF Chart?](https://support.syncfusion.com/agent/kb/18542).
