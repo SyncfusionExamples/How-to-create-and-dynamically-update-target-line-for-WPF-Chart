@@ -69,7 +69,9 @@ Learn step-by-step instructions and gain insights to create and dynamically upda
    .....
     <chart:SfChart.Annotations>
         <chart:HorizontalLineAnnotation Y1="{Binding Y1}"
-                                    ....>
+                                        Stroke="Black"
+                                        StrokeThickness="2"
+                                        ......>
         </chart:HorizontalLineAnnotation>
     </chart:SfChart.Annotations>
    .....
