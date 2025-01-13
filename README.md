@@ -178,8 +178,8 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
     }
 } 
  ```
- 
-**Step 5:** This XAML code for creates a grid layout with a chart and controls for adjusting a target line. The [SfChart](https://help.syncfusion.com/wpf/charts/getting-started) displays revenue data with a horizontal annotation line, adjustable using a TextBox and Slider in the adjacent StackPanel.
+
+**Step 5:** This XAML code demonstrates a [SfChart](https://help.syncfusion.com/wpf/charts/getting-started) with dynamic updates to a horizontal target line annotation, bound to a ViewModel property. The chart includes X and Y axes, a column series, and customizable annotation styling.
 
 **XAML**
   
@@ -226,17 +226,8 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         </chart:ColumnSeries>
 
     </chart:SfChart>
-
-    <StackPanel Orientation="Vertical" Margin="10" Grid.Column="1">
-        <TextBlock Text="Adjust Target Line" FontSize="16" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,20"/>
-        <TextBox Text="{Binding Y1}" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextChanged="TextBox_TextChanged" Margin="0,0,0,20" Padding="10"/>
-        <Slider Minimum="{Binding Minimum, Source={x:Reference Y_Axis}}" 
-                Maximum="{Binding Maximum, Source={x:Reference Y_Axis}}" 
-                Value="{Binding Y1}" HorizontalAlignment="Stretch"/>
-    </StackPanel>
 </Grid> 
  ```
-
 
 **Output:**
 
