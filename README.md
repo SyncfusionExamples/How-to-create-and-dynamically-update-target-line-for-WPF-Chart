@@ -134,7 +134,8 @@ internal class ViewModel : INotifyPropertyChanged
 
 </StackPanel> 
  ```
- 
+This code handles the TextChanged event for a TextBox, dynamically updating the Y1 property in the ViewModel while ensuring the value stays within the axis’s maximum and minimum bounds. It also manages text formatting and prevents recursive event triggers.
+
 **C#**
  
  ```csharp
