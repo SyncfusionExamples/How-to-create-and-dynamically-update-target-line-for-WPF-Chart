@@ -171,7 +171,7 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
     }
 } 
  ```
-**Step 5:** This code defines a [HorizontalLineAnnotation](https://help.syncfusion.com/wpf/charts/annotations#vertical-and-horizontal-line-annotation)for a [SfChart](https://help.syncfusion.com/wpf/charts/getting-started), representing a horizontal line at a specified Y-axis value. It includes custom styling such as dashed stroke, text with font formatting, and text alignment settings.
+**Step 5:** This code defines a [HorizontalLineAnnotation](https://help.syncfusion.com/wpf/charts/annotations#vertical-and-horizontal-line-annotation) for a [SfChart](https://help.syncfusion.com/wpf/charts/getting-started), representing a horizontal line at a specified Y-axis value. It includes custom styling such as dashed stroke, text with font formatting, and text alignment settings.
 
 **XAML**
   
