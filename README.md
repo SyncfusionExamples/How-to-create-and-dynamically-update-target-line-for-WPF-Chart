@@ -66,20 +66,13 @@ Learn step-by-step instructions and gain insights to create and dynamically upda
  
  ```xml
 <chart:SfChart Grid.Column="0">
-
+   .....
     <chart:SfChart.Annotations>
         <chart:HorizontalLineAnnotation Y1="{Binding Y1}"
-                                    Stroke="Black"
-                                    StrokeThickness="2"
-                                    StrokeDashArray="5,2,2"
-                                    Text="Target"
-                                    FontSize="14"
-                                    FontWeight="Bold" 
-                                    HorizontalTextAlignment="Left"
-                                    VerticalTextAlignment="Top">
+                                    ....>
         </chart:HorizontalLineAnnotation>
     </chart:SfChart.Annotations>
-
+   .....
 </chart:SfChart> 
  ```
  
@@ -178,27 +171,14 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
     }
 } 
  ```
-
-**Step 5:** This XAML code demonstrates a [SfChart](https://help.syncfusion.com/wpf/charts/getting-started) with dynamic updates to a horizontal target line annotation, bound to a ViewModel property. The chart includes X and Y axes, a column series, and customizable annotation styling.
+**Step 5:** This code defines a [HorizontalLineAnnotation](https://help.syncfusion.com/wpf/charts/annotations#vertical-and-horizontal-line-annotation)for a [SfChart](https://help.syncfusion.com/wpf/charts/getting-started), representing a horizontal line at a specified Y-axis value. It includes custom styling such as dashed stroke, text with font formatting, and text alignment settings.
 
 **XAML**
   
  ```
-<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"></ColumnDefinition>
-        <ColumnDefinition Width="200"></ColumnDefinition>
-    </Grid.ColumnDefinitions>
+<chart:SfChart Grid.Column="0">
 
-    <chart:SfChart Grid.Column="0">
-
-        <chart:SfChart.PrimaryAxis>
-            <chart:CategoryAxis EdgeLabelsDrawingMode="Fit" ShowGridLines="False" Header="Months"/>
-        </chart:SfChart.PrimaryAxis>
-
-        <chart:SfChart.SecondaryAxis>
-            <chart:NumericalAxis x:Name="Y_Axis" Minimum="0" Maximum="20000" Interval="5000" ShowGridLines="False" Header="Revenue" LabelFormat="'$'0" PlotOffsetEnd="30"/>
-        </chart:SfChart.SecondaryAxis>
+        .....
 
         <chart:SfChart.Annotations>
             <chart:HorizontalLineAnnotation Y1="{Binding Y1}"
@@ -213,20 +193,9 @@ private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
             </chart:HorizontalLineAnnotation>
         </chart:SfChart.Annotations>
 
-        <chart:ColumnSeries ItemsSource="{Binding Data}"
-                        XBindingPath="Months"
-                        YBindingPath="Revenue"
-                        Palette="Custom"
-                        Opacity="0.7">
-            <chart:ColumnSeries.ColorModel>
-                <chart:ChartColorModel>
-                    .....
-                </chart:ChartColorModel>
-            </chart:ColumnSeries.ColorModel>
-        </chart:ColumnSeries>
+        .....
 
-    </chart:SfChart>
-</Grid> 
+</chart:SfChart>
  ```
 
 **Output:**
