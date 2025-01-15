@@ -27,7 +27,7 @@ Learn step-by-step instructions and gain insights to create and dynamically upda
 </Grid> 
  ```
  
-**Step 2:** In first column of grid layout, initialize the [SfChart](https://help.syncfusion.com/wpf/charts/getting-started)and add the axes and series as shown below.
+**Step 2:** In first column of grid layout, initialize the [SfChart](https://help.syncfusion.com/wpf/charts/getting-started) and add the axes and series as shown below.
 
 **XAML**
  
@@ -71,6 +71,7 @@ Learn step-by-step instructions and gain insights to create and dynamically upda
         <chart:HorizontalLineAnnotation Y1="{Binding Y1}"
                                         Stroke="Black"
                                         StrokeThickness="2"
+                                        Text="Target"
                                         ......>
         </chart:HorizontalLineAnnotation>
     </chart:SfChart.Annotations>
