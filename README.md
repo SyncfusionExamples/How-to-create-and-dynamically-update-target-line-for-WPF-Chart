@@ -211,4 +211,4 @@ Path too long exception
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
 
-For more details, refer to the KB on [how to create and dynamically update target line for WPF Chart](https://support.syncfusion.com/agent/kb/18542).
+For more details, refer to the KB on [how to create and dynamically update target line for WPF Chart](https://support.syncfusion.com/kb/article/18542/how-to-create--dynamically-update-target-line-for-wpf-chart).
